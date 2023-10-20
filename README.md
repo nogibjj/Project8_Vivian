@@ -1,4 +1,4 @@
-# README [![CI](https://github.com/nogibjj/Project8_Vivian/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/Project8_Vivian/actions/workflows/ci.yml)
+# README [![Rust CI/CD Pipeline](https://github.com/nogibjj/Project8_Vivian/actions/workflows/rustCI.yml/badge.svg)](https://github.com/nogibjj/Project8_Vivian/actions/workflows/rustCI.yml)[![Python CI/CD Pipeline](https://github.com/nogibjj/Project8_Vivian/actions/workflows/pythonCI.yml/badge.svg)](https://github.com/nogibjj/Project8_Vivian/actions/workflows/pythonCI.yml)
 This repository features the materials for Mini-Project 8. It includes: 
 - A Makefile
 - A Dockerfile
