@@ -1,16 +1,19 @@
 import pandas as pd
 
-def read_all_houses():
-    return pd.read_csv("california_housing_train.csv")
+def count_houses(df):
+    return len(df)
 
-def count_houses():
-    houses = read_all_houses()
-    return len(houses)
+def sum_median_house_values(df):
+    return df['median_house_value'].sum()
 
 def main():
-    number_of_houses = count_houses()
+    df = pd.read_csv("california_housing_train.csv")
+    
+    number_of_houses = count_houses(df)
     print(f"There are {number_of_houses} houses in the dataset.")
-    return 1
+    
+    total_median_value = sum_median_house_values(df)
+    print(f"Total of all median house values: {total_median_value}")
 
 if __name__ == "__main__":
     main()
