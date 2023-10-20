@@ -1,5 +1,5 @@
 [package]
-name = "Count number of Datapoints"  # replace with your project name
+name = "Count_and_Sum_Price"  # replace with your project name
 version = "0.1.0"
 edition = "2018"
 
