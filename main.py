@@ -27,7 +27,9 @@ def main():
         file.write(f"- Time taken: {elapsed_time} seconds\n")
         file.write(f"- Memory used: {memory_used} MB\n")
         file.write("### Operations Performed\n")
-        file.write("1. Read CSV file\n2. Count number of houses\n3. Sum median house values\n")
+        file.write("1. Read CSV file\n")
+        file.write("2. Count number of houses\n")
+        file.write("3. Sum median house values\n")
 
     print(f"There are {number_of_houses} houses in the dataset.")
     print(f"Total of all median house values: {total_median_value}")
