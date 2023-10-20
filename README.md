@@ -1,20 +1,21 @@
-# README [![CI](https://github.com/nogibjj/Project5_Vivian/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/Project5_Vivian/actions/workflows/ci.yml)
-This repository features the materials for Mini-Project 5. It includes: 
+# README [![CI](https://github.com/nogibjj/Project8_Vivian/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/Project8_Vivian/actions/workflows/ci.yml)
+This repository features the materials for Mini-Project 8. It includes: 
 - A Makefile
 - A Dockerfile
 - A foundational set of libraries for development operations and web applications
 - GitHub Actions
+- Cargo.toml to handle Rust dependencies
+- Rust and Python scripts
 
 
 # Purpose Of Project
-The purpose of this project is to build an ETL-Query pipeline. I use the same dataset from my previous project "california_housing.csv" to load into a .db file, and querying it with SQLlite.
-Dataset attributes: "id","longitude","latitude","housing_median_age","total_rooms","total_bedrooms","population","households","median_income","median_house_value"
+The purpose of this project is to capture the performance and resource consumption between python and Rust when dealing with data processing works. I use the same dataset from my previous project "california_housing.csv", read the CSV file and calculated the total number of houses and summed up their median values.
 
-<img width="368" alt="Screen Shot 2023-09-30 at 11 31 51 AM" src="https://github.com/nogibjj/Project5_Vivian/assets/143654445/ec33d8ad-be7c-4201-a688-3e7058ebfb6b">
-
-# Preparation 
+# Steps
 1. open the project in codespaces
 2. container built and virtual environment to be activated through requirements.txt
+3. Compile and Run Rust: cargo run
+4. 
 
 # Check Format & Errors
 1. make format
@@ -25,15 +26,23 @@ Dataset attributes: "id","longitude","latitude","housing_median_age","total_room
 
 <img width="939" alt="Screen Shot 2023-09-30 at 11 44 04 AM" src="https://github.com/nogibjj/Project5_Vivian/assets/143654445/aa1f500f-2b0a-49b9-8dc3-27022c279d79">
 
-# Run Rust
-Compile and Run:
-cargo run - compile my code and then execute the resulting binary.
+# What I did:
+For the Rust part:
+- wrote a Rust program to read a CSV file containing housing details and calculated the total number of houses and summed up their median values.
+- Integrated functionalities to capture its execution time and memory usage to assess the performance of my Rust implementation.
+- The performance data is documented in a markdown file named "rust_performance.md", showcasing the efficiency and resource management capabilities of Rust in handling the dataset.
 
-# Output
-- House successfully create: -122.5,37.7,40,2000,350,1500,350,8.5,500000
-- House with id 1 successfullu updated to:-122.5,37.7,45,2500,400,1600,400,9.0,550000
-- house with id 10 has these info: (10, -114.6, 34.83, 46.0, 1497.0, 309.0, 787.0, 271.0, 2.1908, 48100.0)
-- House with id 1 deleted!
+For the Python part:
+- crafted a Python script that reads the same housing dataset, counts the number of houses, and calculates the total of the median house values.
+- captured the script's execution time and memory consumption and recorded them in a markdown file "python_performance.md".
+
+
+
+
+
+
+# Compare and Results
+
 
 Below shows the output after each CRUD operations on my dataset: 
 
