@@ -22,7 +22,7 @@ def main():
     elapsed_time = end_time - start_time
     memory_used = memory_after - memory_before
     
-    with open("python_performance.md", "w", encoding="utf-8") as f:
+    with open("python_performance.md", "w", encoding="utf-8") as file:
         file.write("## Python Performance Report\n")
         file.write(f"- Time taken: {elapsed_time} seconds\n")
         file.write(f"- Memory used: {memory_used} MB\n")
