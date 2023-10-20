@@ -25,31 +25,9 @@ Dataset attributes: "id","longitude","latitude","housing_median_age","total_room
 
 <img width="939" alt="Screen Shot 2023-09-30 at 11 44 04 AM" src="https://github.com/nogibjj/Project5_Vivian/assets/143654445/aa1f500f-2b0a-49b9-8dc3-27022c279d79">
 
-# CRUD Operations
-### functions in lib/CRUD.py
-    close_connection: used to close the db connection
-    create_house: create a new house data
-    update_house: update a house data by its id
-    delete_house: delete a house data by its id
-    read_house_by_id: read a house data by its id
-   
-## functions in lib/load_data.py
-    load: load the data from csv file into the SQLite database and create a .db file
-
-## CRUD in main.py
-    connect and load into SQLite database: 
-       load("california_housing_train.csv")
-    create_house: 
-        create_house(-122.5, 37.7, 40, 2000, 350, 1500, 350, 8.5, 500000)
-    update house with id=1:
-        update_house(1, -122.5, 37.7, 45, 2500, 400, 1600, 400, 9.0, 550000)
-    print house with id=10:
-        read_house_by_id(10)
-    delete house with id=5:
-        delete_house(1)
-    Close the connection:
-        close_connection()
-
+# Run Rust
+Compile and Run:
+cargo run - compile my code and then execute the resulting binary.
 
 # Output
 - House successfully create: -122.5,37.7,40,2000,350,1500,350,8.5,500000
