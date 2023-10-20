@@ -31,6 +31,7 @@ def main():
 
     print(f"There are {number_of_houses} houses in the dataset.")
     print(f"Total of all median house values: {total_median_value}")
+    return 1
 
 if __name__ == "__main__":
     main()
