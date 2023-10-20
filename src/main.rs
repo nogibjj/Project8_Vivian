@@ -2,7 +2,6 @@ use std::fs::File;
 use csv::Reader;
 use std::error::Error;
 use std::time::Instant;
-use sys_info;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let start = Instant::now();
@@ -32,7 +31,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
 fn count_houses() -> Result<usize, Box<dyn Error>> {
     let file = File::open("california_housing_train.csv")?;
-    let rdr = Reader::from_reader(file);
+    let mut rdr = Reader::from_reader(file);
     Ok(rdr.records().count())
 }
 
