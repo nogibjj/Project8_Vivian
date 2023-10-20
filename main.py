@@ -22,15 +22,15 @@ def main():
     elapsed_time = end_time - start_time
     memory_used = memory_after - memory_before
     
-    with open("python_performance.md", "w") as file:
-        file.write(f"## Python Performance Report\n")
-        file.write(f"- Time taken: {elapsed_time} seconds\n")
-        file.write(f"- Memory used: {memory_used} MB\n")
-        file.write(f"### Operations Performed\n")
-        file.write(f"1. Read CSV file\n2. Count number of houses\n3. Sum median house values\n")
+    with open("python_performance.md", "w", encoding="utf-8") as f:
+        file.write("## Python Performance Report\n")
+        file.write("- Time taken: {elapsed_time} seconds\n")
+        file.write("- Memory used: {memory_used} MB\n")
+        file.write("### Operations Performed\n")
+        file.write("1. Read CSV file\n2. Count number of houses\n3. Sum median house values\n")
 
-    print(f"There are {number_of_houses} houses in the dataset.")
-    print(f"Total of all median house values: {total_median_value}")
+    print("There are {number_of_houses} houses in the dataset.")
+    print("Total of all median house values: {total_median_value}")
 
 if __name__ == "__main__":
     main()
