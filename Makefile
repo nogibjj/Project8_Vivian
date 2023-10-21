@@ -45,9 +45,6 @@ python_lint:
 python_container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
-python_refactor: format lint
 
-python_deploy:
-	#deploy goes here
 		
-python_all: install lint test format deploy
+python_all: python_install python_lint python_test python_format python_container-lint
