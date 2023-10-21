@@ -53,14 +53,16 @@ Operations Performed
 2. Count number of houses
 3. Sum median house values
 
-Python Performance Report 
+Python Performance Report
+[Link to Python Report](https://github.com/nogibjj/Project8_Vivian/blob/006448c7714fd420d8884958cb064ee0ac0b2545/python_performance.md)
 - Time taken: 0.018908977508544922 seconds
 - Memory used: 9.37890625 MB
 
 Rust Performance Report
+[Link to Rust Report](https://github.com/nogibjj/Project8_Vivian/blob/006448c7714fd420d8884958cb064ee0ac0b2545/rust_performance.md#rust-performance-report)
 - Time taken: 68.44ms seconds
 - Memory used: 0 KB
 
 
 ## Summary
-Based on the provided performance reports, when executing the same operations (reading a CSV file, counting the number of houses, and summing the median house values), Python took approximately 0.0189 seconds and consumed about 9.38 MB of memory. On the other hand, the Rust implementation was slightly faster, completing in 68.44 milliseconds, and impressively, it did not increase memory usage, using 0 KB. This indicates that for this specific task, Rust is more efficient in terms of execution time and memory consumption than Python.
+Based on the provided performance reports, when executing the same operations (reading a CSV file, counting the number of houses, and summing the median house values), Python took approximately 0.0189 seconds and consumed about 9.38 MB of memory. On the other hand, the Rust implementation was faster, completed in 68.44 milliseconds, and barely used memory. This indicates that for this specific task, Rust is more efficient in terms of execution time and memory consumption than Python.
