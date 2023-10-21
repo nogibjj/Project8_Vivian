@@ -3,7 +3,15 @@ use csv::Reader;
 use std::error::Error;
 use std::time::Instant;
 
-fn main() -> Result<(), Box<dyn Error>> {
+fn main() {
+    match run_program() {
+        Ok(1) => println!("Program executed successfully!"),
+        Err(e) => eprintln!("Error occurred: {}", e),
+        _ => eprintln!("Unknown error occurred."),
+    }
+}
+
+pub fn run_program() -> Result<i32, Box<dyn Error>> {
     let start = Instant::now();
     let mem_info_before = sys_info::mem_info().unwrap();
 
@@ -25,9 +33,8 @@ fn main() -> Result<(), Box<dyn Error>> {
         )
     )?;
 
-    Ok(())
+    Ok(1)
 }
-
 
 fn count_houses() -> Result<usize, Box<dyn Error>> {
     let file = File::open("california_housing_train.csv")?;
